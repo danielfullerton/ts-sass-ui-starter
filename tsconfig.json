@@ -1,0 +1,11 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "target": "ES5",
+    "outDir": "dist",
+    "allowJs": false,
+    "lib": ["DOM", "ES2015"]
+  }
+}
