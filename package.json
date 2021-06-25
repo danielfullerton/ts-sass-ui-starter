@@ -1,16 +1,18 @@
 {
-  "name": "danielfullerton-dot-com",
+  "name": "ts-sass-ui-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A sample scaffolded project that already has SASS, TypeScript and Bootstrap included, as well as a webpack config for running locally and building.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --config webpack.config.js --progress",
+    "build": "webpack"
   },
-  "author": "",
+  "author": "Daniel Fullerton",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.0.0",
     "ts-loader": "^9.2.3",
@@ -18,5 +20,8 @@
     "webpack": "^5.40.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2"
   }
 }

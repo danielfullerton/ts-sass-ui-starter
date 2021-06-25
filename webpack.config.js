@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.ts',
-  watch: true,
   devtool: 'inline-source-map',
   optimization: {
 
@@ -16,16 +15,16 @@ module.exports = {
       template: 'index.html'
     }),
     new webpack.HotModuleReplacementPlugin(),
-    {
-      apply: (compiler) => {
-        compiler.hooks.done.tap('DonePlugin', (stats) => {
-          console.log('Compile is done !')
-          setTimeout(() => {
-            process.exit(0)
-          })
-        });
-      }
-    }
+    // {
+    //   apply: (compiler) => {
+    //     compiler.hooks.done.tap('DonePlugin', (stats) => {
+    //       console.log('Compile is done !')
+    //       setTimeout(() => {
+    //         process.exit(0)
+    //       })
+    //     });
+    //   }
+    // }
   ],
   module: {
     rules: [
